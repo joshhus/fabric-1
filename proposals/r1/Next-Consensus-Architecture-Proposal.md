@@ -25,7 +25,7 @@ The architecture has the following advantages compared to the design in which pe
 
 ## 1. System architecture
 
-The blockchain is a distributed system consisting of many nodes that communicate with each other. The blockchain runs programs called chaincode, holds state and ledger data, and executes transactions.  The chaincode is the central element: transactions are operations invoked on the chaincode and only chaincode changes the state. Transactions have to be "endorsed" and only endorsed transactions are committed and have an effect on the state. There may exist one or more special chaincodes for management functions and parameters, collectively called *system chaincodes*.
+A blockchain network is a decentralized, distributed system consisting of many nodes that communicate with each other. Blockchain networks run programs called chaincode, hold state and ledger data, and execute transactions. Chaincode is the central element: transactions are operations invoked on the chaincode and only chaincode can change the state/ledger. Transactions must be "endorsed" before  they are committed to the shared ledger (effect the state). Optional chaincode applications for management functions and parameters, collectively called *system chaincode*, can also exist.
 
 
 ### 1.1. Transactions
